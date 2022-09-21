@@ -1,0 +1,245 @@
+@import "../../fontawesome-all.css";
+@font-face {
+    font-family: IRANSans;
+    src: url("../../../fonts/IRANSansWeb300.woff");
+}
+
+html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    direction: rtl;
+    min-height: 100%;
+    background: #EEE;
+    align-items: center;
+    justify-content: center;
+    font-family: IRANSans, serif
+}
+
+input[type="text"]:focus {
+    outline: 0 none;
+    border-color: rgba(165, 165, 165, .8);
+    box-shadow: 0 3px 11px rgba(0, 0, 0, .1)
+}
+
+.dir-rtl {
+    direction: rtl
+}
+
+.dir-ltr {
+    direction: ltr
+}
+
+.bg-img {
+    top: 25%;
+    height: 50vh;
+    position: absolute
+}
+
+.bg-img.right {
+    right: 0
+}
+
+.bg-img.left {
+    left: 0;
+    transform: rotate(180deg)
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, .1)
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center
+}
+
+.main {
+    display: flex;
+    position: relative;
+    align-items: center!important;
+    justify-content: center!important
+}
+
+.form-section {
+    margin-left: 0;
+    padding: 0 20px;
+    background: #fff;
+    min-width: 380px;
+    min-height: 430px;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, .1)
+}
+
+.form-section input {
+    margin-bottom: 25px
+}
+
+.form-title {
+    margin: 25px 0;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between
+}
+
+.capcha-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center
+}
+
+.blue-box {
+    z-index: 1;
+    width: 335px;
+    height: 470px;
+    display: flex;
+    margin-top: 5px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    direction: rtl!important;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
+    background: url(../../img/login/bg-uni.png) no-repeat
+}
+
+.blue_box__header {
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 15px;
+    align-content: center;
+    border-bottom: 2px dashed rgba(255, 255, 255, .3)
+}
+
+.blue_box__logo img {
+    width: 60px
+}
+
+.blue_box__title {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 20px;
+    text-align: center
+}
+
+.blue_box__title span {
+    flex-basis: 100%
+}
+
+.blue_box__link {
+    width: 100%;
+    font-size: .9rem;
+    text-align: right
+}
+
+.blue_box__link ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none
+}
+
+.blue_box__link li:first-child {
+    margin-top: 10px
+}
+
+.blue_box__link li a {
+    font-size: 13px;
+    width: 100%;
+    color: #cfcfcf;
+    text-decoration: none
+}
+
+.blue_box__link li a i {
+    color: #cfcfcf
+}
+
+.blue_box__link li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, .2);
+    background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(217, 217, 217, .2)) right;
+    background-size: 200%;
+    transition: .5s ease-in
+}
+
+.blue_box__link li:hover {
+    background-position: left
+}
+
+.blue_box__link li:hover i {
+    color: #fff
+}
+
+.social-box {
+    width: 80px;
+    height: 430px;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 3px 11px rgba(0, 0, 0, .1)
+}
+
+.social-box i {
+    font-size: 1.5rem;
+    margin-bottom: 20px
+}
+
+.social-box i.green {
+    color: #17b15a
+}
+
+.login-footer {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background: rgb(214 214 214)
+}
+
+@media only screen and (max-width:830px) {
+    .form-section {
+        margin: 20px!important
+    }
+    .d-none-mobile {
+        display: none!important
+    }
+}
+
+.iziToast {
+    font-family: IRANSans, serif!important
+}
+
+.iziToast.iziToast-color-red {
+    background: #c05555
+}
+
+.iziToast .iziToast-message.slideIn,
+.iziToast-icon.ico-error {
+    color: aliceblue!important
+}
